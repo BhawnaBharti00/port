@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Edit by Bhawan</title>
+  <title>Animation by Bhawna Check</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -68,9 +68,9 @@
 </head>
 <body>
   <header id="hero">
-    <h1>Welcome to Edit by Bhawan</h1>
+    <h1>Welcome to Animation by Bhawan Check</h1>
     <img src="your-image.jpg" alt="Bhawan profile" />
-    <p>Creative Edits | Animation | YouTube | Wedding Highlights</p>
+    <p>Animation | Illustration | Graphic Art | Storyboard Arts</p>
   </header>
 
   <section id="animation-projects">
