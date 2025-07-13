@@ -78,45 +78,52 @@
     <div class="projects">
       <img src="project1.jpg" alt="Project 1" />
       <img src="project2.jpg" alt="Project 2" />
-      <!-- Add more image/video thumbnails -->
+      <video width="640" height="360" controls>
+  <source src="rigged cloths_3.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
     </div>
   </section>
 
-  <section id="youtube-edits">
-    <h2>YouTube Edits</h2>
+  <section id="illustrations">
+    <h2>Illustration</h2>
     <div class="projects">
-      <img src="yt1.jpg" alt="YouTube Edit 1" />
-      <img src="yt2.jpg" alt="YouTube Edit 2" />
+      <img src="elements-2.gif" alt="Illustration 1" />
+      <img src="pot.gif" alt="Illustration 2" />
     </div>
   </section>
 
-  <section id="wedding-edits">
-    <h2>Wedding Edits</h2>
-    <p>Emotion-packed storytelling for your special day.</p>
+  <section id="some-tests">
+    <h2>Some Tests</h2>
+    <p>Emotions that tell stories.</p>
     <div class="projects">
-      <img src="wedding1.jpg" alt="Wedding Edit 1" />
-      <img src="wedding2.jpg" alt="Wedding Edit 2" />
+      <img src="momo-face.gif" alt="Sample 1" />
+      <img src="pot.gif" alt="Sample 2" />
     </div>
   </section>
 
   <section id="tools">
     <h2>Tools I Use</h2>
     <ul class="tools">
-      <li>Adobe Premiere Pro</li>
+      <li>Adobe Animate</li>
+      <li>Adobe Illustrator</li>
       <li>Adobe After Effects</li>
-      <li>Blender</li>
-      <li>Photoshop</li>
-      <li>Illustrator</li>
+      <li>Figma</li>
     </ul>
   </section>
 
   <section id="book">
-    <h2>Book Your Edit</h2>
-    <a href="https://wa.me/91XXXXXXXXXX" class="button" target="_blank">Book via WhatsApp</a>
+    <h2>Book Your Fun Sample</h2>
+    <a href="https://wa.me/919263300290" class="button" target="_blank">Book via WhatsApp</a>
   </section>
 
   <footer id="contact">
-    <p>Contact: bhawan@example.com | <a href="https://wa.me/91XXXXXXXXXX">WhatsApp</a> | <a href="https://instagram.com/yourhandle">Instagram</a></p>
+    <p>Contact: bhartibhawna4488@example.com | <a href="https://wa.me/919263300290">WhatsApp</a>
+     <p>View my work on Behance: 
+  <a href="https://www.behance.net/yourbehanceusername" target="_blank">
+    behance.net/bhawnabharti48
+  </a>
+</p> 
     <p>&copy; 2025 Edit by Bhawan</p>
   </footer>
 </body>
