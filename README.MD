@@ -77,7 +77,7 @@
     <h2>Animation Projects</h2>
     <div class="projects">
       <video controls>
-        <source src="rigged cloths_3.mp4" type="video/mp4">
+        <source src="rigged_cloths_3.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
