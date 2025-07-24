@@ -1,4 +1,4 @@
-<!-- index.html (Homepage) -->
+<!-- index.html (Habo-style Mobile Homepage for Berry Paws ASMR) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,31 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Berry Paws ASMR</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>🍓 Berry Paws ASMR</h1>
-      <p>Relaxing Animated Stories with Purple Cat & Misho</p>
-    </header>
+  <div class="screen screen-hero">
+    <div class="hero-content">
+      <h1 class="title">🍓 Berry Paws ASMR</h1>
+      <p class="subtitle">Relaxing Animated Stories with Purple Cat & Misho</p>
+      <lottie-player 
+        src="assets/intro-animation.json" 
+        background="transparent" 
+        speed="1" 
+        style="width: 250px; height: 250px;" 
+        loop autoplay>
+      </lottie-player>
+      <button class="enter-btn" onclick="goToScreen('screen-menu')">✨ Enter</button>
+    </div>
+  </div>
 
-    <section class="menu">
+  <div class="screen screen-menu" id="screen-menu">
+    <div class="menu">
       <a href="episodes.html" class="menu-item">🎬 Episodes</a>
       <a href="#about" class="menu-item">🌸 About</a>
       <a href="#contact" class="menu-item">📮 Contact</a>
-    </section>
+    </div>
+  </div>
 
-    <section class="hero">
-      <img src="assets/hero-image.svg" alt="Purple Cat in Rain" class="hero-img" />
-      <h2 class="tagline">A Rainy Day at Misho's Spa ☔💆‍♀</h2>
-      <p class="sub">Tap to explore the cozy world of Berry Paws...</p>
-    </section>
+  <div class="screen screen-about" id="about">
+    <div class="content">
+      <h2>🌸 About</h2>
+      <p>Berry Paws ASMR is a cozy animation channel featuring Purple Cat & Misho in peaceful, pastel adventures. Designed to relax your senses and calm your mind.</p>
+    </div>
+  </div>
 
-    <footer id="contact">
+  <div class="screen screen-contact" id="contact">
+    <div class="content">
+      <h2>📮 Contact</h2>
       <p>📧 Email: berrypawsasmr@gmail.com</p>
       <p>📷 Instagram: @berrypaws_asmr</p>
       <p>🔗 YouTube: Berry Paws ASMR</p>
-    </footer>
+    </div>
   </div>
+
+  <script>
+    function goToScreen(id) {
+      document.querySelectorAll('.screen').forEach(s => s.style.display = 'none');
+      document.getElementById(id).style.display = 'flex';
+    }
+
+    // Show menu screen by default after load
+    window.onload = () => {
+      document.querySelectorAll('.screen').forEach(s => s.style.display = 'none');
+      document.querySelector('.screen-hero').style.display = 'flex';
+    };
+  </script>
 </body>
 </html>
