@@ -1,4 +1,3 @@
-<!-- index.html (Habo-style Mobile Homepage for Berry Paws ASMR) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,59 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Berry Paws ASMR</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="b1.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
   <div class="screen screen-hero">
     <div class="hero-content">
       <h1 class="title">🍓 Berry Paws ASMR</h1>
       <p class="subtitle">Relaxing Animated Stories with Berry & Misho</p>
-      <lottie-player 
-        src="b1.js" 
-        background="transparent" 
-        speed="1" 
-        style="width: 250px; height: 250px;" 
+
+      <lottie-player
+        src="b1.json"
+        background="transparent"
+        speed="1"
+        style="width: 250px; height: 250px;"
         loop autoplay>
       </lottie-player>
-      <button class="enter-btn" onclick="goToScreen('screen-menu')">✨ Enter</button>
+
+      <a href="menu.html" class="enter-btn">✨ Enter</a>
     </div>
   </div>
-
-  <div class="screen screen-menu" id="screen-menu">
-    <div class="menu">
-      <a href="episodes.html" class="menu-item">🎬 Episodes</a>
-      <a href="about.html" class="menu-item">🌸 About</a>
-      <a href="contact.html" class="menu-item">📮 Contact</a>
-    </div>
-  </div>
-
-  <div class="screen screen-about" id="about">
-    <div class="content">
-      <h2>🌸 About</h2>
-      <p>Berry Paws ASMR is a cozy animation channel featuring Berry & Misho in peaceful, pastel adventures. Designed to relax your senses and calm your mind.</p>
-    </div>
-  </div>
-
-  <div class="screen screen-contact" id="contact">
-    <div class="content">
-      <h2>📮 Contact</h2>
-      <p>📧 Email: berrypawsasmr@gmail.com</p>
-      <p>📷 Instagram: @berrypaws_asmr</p>
-      <p>🔗 YouTube: https://youtube.com/@berrypawsasmr</p>
-    </div>
-  </div>
-
-  <script>
-    function goToScreen(id) {
-      document.querySelectorAll('.screen').forEach(s => s.style.display = 'none');
-      document.getElementById(id).style.display = 'flex';
-    }
-
-    // Show menu screen by default after load
-    window.onload = () => {
-      document.querySelectorAll('.screen').forEach(s => s.style.display = 'none');
-      document.querySelector('.screen-hero').style.display = 'flex';
-    };
-  </script>
 </body>
 </html>
