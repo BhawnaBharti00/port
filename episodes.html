@@ -1,40 +1,90 @@
-<!-- episodes.html (Secondary Page for Episodes) -->
+<!-- episode.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Episodes | Berry Paws ASMR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Episodes – Berry Cat ASMR 🎬</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .episode-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1.5em;
+      padding: 2em 1em;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .episode-card {
+      background-color: #fff0f5;
+      border: 2px solid #d8a3cb;
+      border-radius: 14px;
+      padding: 1em;
+      transition: transform 0.2s ease;
+    }
+
+    .episode-card:hover {
+      transform: scale(1.08);
+      animation: bounce 0.4s ease;
+    }
+
+    .episode-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .episode-title {
+      margin-top: 0.6em;
+      font-size: 0.95em;
+      font-weight: bold;
+      color: #a058a1;
+    }
+
+    @keyframes bounce {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.1); }
+      100% { transform: scale(1.08); }
+    }
+  </style>
 </head>
-<body>
-  <div class="container">
-    <header>
-      <a href="index.html" class="back-btn">🔙 Back</a>
-      <h1>🎬 Cozy Episodes</h1>
-    </header>
+<body class="lavender-bg">
 
-    <section class="episodes-list">
-      <div class="episode-card">
-        <img src="b2.js" alt="Episode 1 Thumbnail" class="thumb" />
-        <div class="episode-info">
-          <h2>Ep 1: Rainy Day at Misho's Spa ☔</h2>
-          <p>Purple Cat visits Misho for a cozy spa treatment during a rainy evening.</p>
-          <a href="#" class="watch-btn">▶ Watch Now</a>
-        </div>
-      </div>
+  <h1>🎬 Berry Cat Episodes</h1>
+  <p>Choose your cozy adventure with Berry Cat 💜</p>
 
-      <div class="episode-card">
-        <img src="b2.js" alt="Episode 2 Thumbnail" class="thumb" />
-        <div class="episode-info">
-          <h2>Ep 2: Lavender Tea & Gentle Breezes 🍵</h2>
-          <p>A relaxing afternoon with calming lavender tea and soft wind chimes.</p>
-          <a href="#" class="watch-btn">▶ Watch Now</a>
-        </div>
-      </div>
+  <div class="episode-grid">
+    <!-- Episode 1 -->
+    <div class="episode-card">
+      <img src="c.png" alt="Episode 1 - Spa Day" />
+      <div class="episode-title">🛁 Spa Day Relaxation</div>
+    </div>
 
-      <!-- Add more episode cards here -->
-    </section>
+    <!-- Episode 2 -->
+    <div class="episode-card">
+      <img src="d.png" alt="Episode 2 - Rainy Day" />
+      <div class="episode-title">🌧 Rainy Day Whispers</div>
+    </div>
+
+    <!-- Add more mock episodes here if needed -->
+    <div class="episode-card">
+      <img src="c.png" alt="Episode 3 - Purrfect Dreams" />
+      <div class="episode-title">💤 Purrfect Dreams</div>
+    </div>
+
+    <div class="episode-card">
+      <img src="d.png" alt="Episode 4 - Meow Spa" />
+      <div class="episode-title">🎀 Meow Spa Special</div>
+    </div>
   </div>
+
+  <nav class="nav-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="spa.html">🛁 Spa</a>
+    <a href="rainyday.html">🌧 Rain</a>
+    <a href="contact.html">💌 Contact</a>
+  </nav>
+
+  <footer>🐾 Berry Cat ASMR – More cozy episodes soon ✨</footer>
 </body>
 </html>
