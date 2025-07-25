@@ -4,104 +4,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Misho's Spa 🧖‍♀✨</title>
+  <title>Spa Time – Berry Cat ASMR 🛁</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    body {
-      margin: 0;
-      padding: 2em 1em;
-      background: linear-gradient(to bottom, #fddde6, #e6daff);
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      color: #a05b9d;
-      text-align: center;
+    .spa-slide {
+      animation: slidein 2s ease-out forwards;
+      opacity: 0;
+      transform: translateX(-100%);
+      max-width: 300px;
+      margin: 2em auto;
     }
 
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.5em;
+    @keyframes slidein {
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
     }
 
-    p {
-      font-size: 1.1em;
-      line-height: 1.6em;
-      max-width: 500px;
-      margin: 0 auto 2em;
+    .wiggle {
+      animation: wiggle 1s ease-in-out infinite alternate;
     }
 
-    .spa-animation {
-      width: 90%;
-      max-width: 400px;
-      margin: 1em auto;
+    @keyframes wiggle {
+      0% { transform: rotate(-2deg); }
+      100% { transform: rotate(2deg); }
     }
 
-    .image-icons {
-      display: flex;
-      justify-content: center;
-      gap: 1em;
-      margin: 1.5em 0;
+    .berry-cat-wiggle {
+      width: 120px;
+      margin-bottom: 1em;
     }
 
-    .img-btn {
-      width: 60px;
-      height: 60px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 0.8em 1.5em;
-      background-color: #fff0f5;
-      color: #d46ab3;
-      border: 2px solid #d46ab3;
-      border-radius: 12px;
-      font-size: 1em;
-      text-decoration: none;
-      margin-top: 2em;
-      transition: all 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #ffe3ee;
-    }
-
-    footer {
-      margin-top: 3em;
-      font-size: 0.9em;
-      color: #c493c4;
+    .nav-links a {
+      margin-top: 1em;
     }
   </style>
 </head>
-<body>
+<body class="lavender-bg">
 
-  <h1>Welcome to Misho's Spa 🧖‍♀🌸</h1>
+  <h1>🛁 Spa Time with Berry Cat</h1>
+  <p class="spa-slide">Relax and unwind with soothing ASMR in Berry Cat’s pastel spa world.</p>
 
-  <p>Need a break from the rain? Come relax with Misho and Berry Cat. Here, warm towels, lavender scents, and soft purring sounds will melt your stress away. 💆‍♀🐱</p>
+  <!-- Wiggle image -->
+  <img src="c.png" class="wiggle berry-cat-wiggle" alt="Berry Cat Wiggle" />
 
-  <div class="spa-animation" id="spaLottie"></div>
-
-  <div class="image-icons">
-    <img src="c.png" class="img-btn" alt="Berry Cat Icon" />
-    <img src="d.png" class="img-btn" alt="Lavender Icon" />
+  <!-- Sliding d.png as background or element -->
+  <div class="spa-slide">
+    <img src="d.png" alt="Spa Tub" style="width: 100%; border-radius: 20px;" />
   </div>
 
-  <a class="btn" href="index.html">← Back to Home</a>
+  <nav class="nav-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="rainyday.html">🌧 Rainy Day</a>
+    <a href="episode.html">🎬 Episodes</a>
+    <a href="contact.html">💌 Contact</a>
+  </nav>
 
-  <footer>
-    💖 Berry Cat ASMR | Misho's Cozy Corner
-  </footer>
-
-  <!-- Animation Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
-  <script src="b3.json"></script>
-  <script>
-    var spaAnimation = lottie.loadAnimation({
-      container: document.getElementById('spaLottie'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      animationData: b1
-    });
-  </script>
-
+  <footer>🐾 Berry Cat ASMR – Spa Day Comfort 💅</footer>
 </body>
 </html>
