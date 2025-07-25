@@ -1,18 +1,112 @@
+<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Berry Paws ASMR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – Berry Cat ASMR 💌</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .contact-wrapper {
+      text-align: center;
+      position: relative;
+      padding-top: 2em;
+    }
+
+    /* Blushing cat */
+    .blushing-cat {
+      width: 130px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .blush {
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 40px;
+      background: radial-gradient(circle, #ffb6c1 20%, transparent 70%);
+      opacity: 0;
+      animation: blushFade 2s ease-in-out forwards;
+      z-index: 1;
+      border-radius: 50%;
+    }
+
+    @keyframes blushFade {
+      0% { opacity: 0; transform: translateX(-50%) scale(0.8); }
+      100% { opacity: 1; transform: translateX(-50%) scale(1); }
+    }
+
+    /* Speech bubble */
+    .speech-bubble {
+      position: relative;
+      background: #fff0f6;
+      border: 2px solid #dda0dd;
+      border-radius: 1em;
+      padding: 1em;
+      width: 220px;
+      margin: 1em auto;
+      font-size: 0.9em;
+      color: #a058a1;
+      opacity: 0;
+      animation: popUp 1s ease-out 1s forwards;
+    }
+
+    .speech-bubble::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 10px;
+      border-style: solid;
+      border-color: #fff0f6 transparent transparent transparent;
+    }
+
+    @keyframes popUp {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    .contact-info {
+      margin-top: 2em;
+      font-size: 1em;
+      color: #6c3a6b;
+    }
+
+    .contact-info a {
+      display: block;
+      margin: 0.5em 0;
+      text-decoration: none;
+      color: #a058a1;
+    }
+  </style>
 </head>
-<body class="panel">
-  <div class="container">
-    <h1>📮 Contact</h1>
-    <p>📧 Email: berrypawsasmr@gmail.com</p>
-    <p>📷 Instagram: @berrypaws_asmr</p>
-    <p>🔗 YouTube: Berry Paws ASMR</p>
-    <a href="index.html" class="menu-item">🔙 Back to Home</a>
+<body class="lavender-bg">
+
+  <h1>💌 Say Hi to Berry Cat!</h1>
+  <p class="speech-bubble">Meow~ Let’s connect!</p>
+
+  <div class="contact-wrapper">
+    <div class="blush"></div>
+    <img src="c.png" alt="Berry Cat Blushing" class="blushing-cat" />
   </div>
+
+  <div class="contact-info">
+    <a href="mailto:berrycatasmr@gmail.com">📧 berrycatasmr@gmail.com</a>
+    <a href="#">📷 Instagram: @berrycat.asmr</a>
+    <a href="#">💬 WhatsApp: +123-456-7890</a>
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="spa.html">🛁 Spa</a>
+    <a href="rainyday.html">🌧 Rain</a>
+    <a href="episode.html">🎬 Episodes</a>
+  </nav>
+
+  <footer>🐾 Berry Cat ASMR – Always here to listen 💗</footer>
 </body>
 </html>
