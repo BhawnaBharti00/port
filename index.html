@@ -4,86 +4,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Berry Cat ASMR 🍓🐱</title>
-  <style>
-    body {
-      margin: 0;
-      background: linear-gradient(to bottom, #fddde6, #e6daff);
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2em 1em;
-    }
-
-    h1 {
-      font-size: 2em;
-      color: #aa7fc5;
-      margin-bottom: 1em;
-    }
-
-    .animation-container {
-      width: 90%;
-      max-width: 400px;
-      margin-bottom: 2em;
-    }
-
-    .btn {
-      display: block;
-      width: 100%;
-      max-width: 300px;
-      margin: 1em auto;
-      padding: 1em;
-      text-align: center;
-      background-color: #fff0f5;
-      color: #d46ab3;
-      border: 2px solid #d46ab3;
-      border-radius: 12px;
-      font-size: 1.1em;
-      text-decoration: none;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: all 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #ffe3ee;
-    }
-
-    .img-btn {
-      width: 60px;
-      height: 60px;
-      margin: 1em;
-    }
-  </style>
+  <title>Berry Cat ASMR 🌸</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="lavender-bg">
 
-  <h1>Berry Cat ASMR 🍓🐱</h1>
+  <h1>🐱 Berry Cat ASMR</h1>
+  <p>Welcome to the cozy world of Berry Cat – where comfort, whispers, and pastel dreams live.</p>
 
-  <div class="animation-container" id="lottie"></div>
-
-  <a class="btn" href="spa.html">🧖‍♀ Visit Misho's Spa</a>
-  <a class="btn" href="rainyday.html">🌧 Rainy Day Episode</a>
-  <a class="btn" href="contact.html">📬 Contact Berry Cat</a>
-
-  <!-- Optional PNG Buttons -->
-  <div>
-    <img src="b1.json" class="img-btn" alt="Cute Cat" />
-    <img src="d.png" class="img-btn" alt="Lavender Scent" />
+  <div class="float-breath">
+    <img src="c.png" alt="Berry Cat floating" class="berry-img" />
   </div>
 
-  <!-- Animation Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
-  <script src="b1.js"></script>
-  <script>
-    var animation = lottie.loadAnimation({
-      container: document.getElementById('lottie'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      animationData: b1 // coming from b1.js
-    });
-  </script>
+  <nav class="nav-links">
+    <a href="spa.html">🛁 Spa Time</a>
+    <a href="rainyday.html">🌧 Rainy Day</a>
+    <a href="episode.html">🎬 All Episodes</a>
+    <a href="contact.html">💌 Contact</a>
+  </nav>
 
+  <footer>🐾 Berry Cat ASMR | Cozy vibes always 💜</footer>
 </body>
 </html>
