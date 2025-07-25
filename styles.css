@@ -1,114 +1,51 @@
-/* styles.css for Berry Paws ASMR (Habo-style Mobile Site) */
-
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Comic Sans MS', 'Poppins', sans-serif;
-}
-
-body, html {
-  height: 100%;
-  background: #fce7f3;
-  overflow: hidden;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #fff0f5;
+  color: #333;
 }
 
 .screen {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
-  padding: 2rem;
-  transition: all 0.5s ease-in-out;
-  background: linear-gradient(145deg, #fce7f3, #e9d5ff);
 }
 
-.screen-hero {
-  background: linear-gradient(to bottom, #fcd5ce, #e2eafc);
-  text-align: center;
-}
-
-.hero-content h1 {
-  font-size: 2.2rem;
-  color: #d946ef;
-  margin-bottom: 0.5rem;
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .subtitle {
-  color: #8b5cf6;
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .enter-btn {
-  padding: 0.6rem 1.5rem;
+  padding: 10px 20px;
+  background-color: #ffb6c1;
   border: none;
-  border-radius: 20px;
-  background-color: #d8b4fe;
-  color: #fff;
-  font-size: 1rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1rem;
   cursor: pointer;
-  margin-top: 1rem;
-  transition: background 0.3s;
-}
-
-.enter-btn:hover {
-  background-color: #c084fc;
+  text-decoration: none;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  align-items: center;
+  gap: 15px;
 }
 
 .menu-item {
-  font-size: 1.5rem;
-  color: #7c3aed;
+  background-color: #ffe4e1;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 1.2rem;
   text-decoration: none;
-  padding: 0.8rem 2rem;
-  border-radius: 30px;
-  background: #f3e8ff;
-  box-shadow: 2px 2px 6px #d1d5db;
-  transition: transform 0.2s ease;
-}
-
-.menu-item:hover {
-  transform: scale(1.05);
-  background: #e9d5ff;
-}
-
-.content {
-  max-width: 90%;
+  color: #333;
   text-align: center;
-  color: #6b21a8;
-}
-
-.content h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #d946ef;
-}
-
-.content p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-@media screen and (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 1.8rem;
-  }
-  .menu-item {
-    font-size: 1.2rem;
-    padding: 0.6rem 1.2rem;
-  }
-  .content h2 {
-    font-size: 1.6rem;
-  }
-  .content p {
-    font-size: 1rem;
-  }
 }
